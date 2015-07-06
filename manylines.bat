@@ -2,7 +2,7 @@
 
 @echo off
 set CDIR=%cd%
-echo Type "/n" for to read lines of the current directory and type "/exit" to exit.
+echo Type "/n" to read lines of the current directory or type "/exit" to exit.
 
 :start
 title Line counter
