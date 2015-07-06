@@ -9,7 +9,7 @@ IF %INPUT%==n (
 	cd %CDIR%
 ) ELSE (
 	IF EXIST %INPUT% (
-	cd %INPUT%
+		cd %INPUT%
 ) ELSE (
 		echo Directory could not be found.
 		goto start
