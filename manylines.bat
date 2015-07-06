@@ -1,12 +1,16 @@
 :: Drop into your VS projects folder.
 @echo off
 set CDIR=%cd%
+echo Type "/n" for to read lines of the current directory and type "/exit" to exit.
+
 :start
 title Line counter
 cd %CDIR%
 set /p INPUT="Path to directory: "
-IF %INPUT%==n (
+IF %INPUT%==/n (
 	cd %CDIR%
+) ELSE IF %INPUT%==/exit (
+		exit
 ) ELSE (
 	IF EXIST %INPUT% (
 		cd %INPUT%
@@ -15,6 +19,7 @@ IF %INPUT%==n (
 		goto start
 	)
 )
-echo Lines in project:
-powershell "(dir -include *.cs,*.xaml -recurse | select-string .).Count"
+::echo Lines in project:
+for /f %%i in ('powershell "(dir -include *.cs,*.xaml -recurse | select-string .).Count"') do set OUTPUT=%%i
+echo Lines in project: %OUTPUT%
 goto start
