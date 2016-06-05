@@ -1,6 +1,6 @@
 # Manylines
 # So, what is this?
-Manylines is a simple batch file which is intended to output how many lines there are in your C# project.
+Manylines is a simple batch file that is intended to output how many lines there are in your C# project.
 Just simply place the batch file in your Visual Studio projects folder and you should be good to go!
 # How do I use it?
 As seen in the file, you can type '/n' to output the lines how many lines of code are in the current directory; great for checking how much code you have written overall.
