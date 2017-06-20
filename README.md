@@ -12,4 +12,4 @@ Typing '/exit' closes the Command Prompt.
 # Why did you decide to write this?
 I wrote this because I could and I thought it would be useful.
 
-Check out my site, thx: http://fire2000.cf
+Check out my site, thx: http://halkion.cf
